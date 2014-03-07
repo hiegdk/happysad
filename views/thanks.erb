@@ -1,0 +1,14 @@
+<h1>Thanks for your feedback!</h1>
+<img src='/img/<%= @v %>.png' border='0' height='64' width='64' />
+
+<br /><br />
+
+<form method="post" action="/comment" role="form">
+	<input type="hidden" name="id" value="<%= @id %>" />
+	<div class="form-group">
+		<label for="comment">If you have any specific comments - good or bad - we'd love to hear them: </label><br />
+		<textarea name="comment" rows="4" cols="60"></textarea>
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+
+</form>
